@@ -1,0 +1,17 @@
+/* pages/list/list.wxss */
+.menu_box{
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  height:90rpx;
+line-height:90rpx;
+border-left:3px solid #fff;
+}
+.list-right{
+  float:right;
+}
+.menu_box .borders{
+  color:#AB956D;
+  border-left:3px solid #AB956D;
+
+}

@@ -1,0 +1,67 @@
+/* pages/details/details.wxss */
+.one>image{
+  width:380px;
+}
+.detail-text{
+  padding-left: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.text1{
+  color: red;
+  font-size:33rpx;
+}
+.menu_box{
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+}
+.bottom{
+  height:52px;
+  width:375px;
+  display: flex;
+  justify-content: space-around;
+}
+.icon-box{
+  width:20%;
+height:100rpx;
+border:1rpx solid #ccc;
+font-size:14px;
+text-align:center;
+margin-top:10rpx;
+}
+.icon-box>image{
+  width:20px;
+  height:20px;
+}
+.wenzi{
+display: block;
+color:#8a8a8a;
+font-size:10px;
+}
+.bar1{
+  background: #F57C2B;
+}
+.bar1>.wenzi{
+  height:50%;
+  color: floralwhite;
+  font-size:15px;
+  display: bolck;
+
+}
+.bar2{
+  background: #FF0000;
+   display: flex;
+  flex-wrap: nowrap;
+  
+}
+.bar2>.wenzi{
+  height:50%;
+  color: floralwhite;
+  font-size:14px;
+ 
+
+}
+.menu_box .borders{
+  color:greenyellow;
+  border-bottom:3px solid greenyellow;
+}

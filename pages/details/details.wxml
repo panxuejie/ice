@@ -1,0 +1,45 @@
+<!--pages/details/details.wxml-->
+<view>
+  <view class='one'><image src='../../images/tianp2.jpg'></image>
+    <view class='detail-text'>
+      <view><text>精品甜品系列1</text></view>
+      <view><text class='text1'>超级无敌海底彩虹蛋糕</text></view> 
+      <view><text class='text1'>$10</text></view>
+    </view>
+  </view>
+
+  <!-- 详情，参数 -->
+<view class="menu_box">
+ <text class='menu1 {{menuTapCurrent=="0"?"borders":""}}' data-current="0" catchtap="menuTap" bindtap='enter'>图文详情</text>
+ <text class='menu2 {{menuTapCurrent=="1"?"borders":""}}' data-current="1" catchtap="menuTap" bindtap='enter'>规格参数</text>
+  <text class='menu3 {{menuTapCurrent=="2"?"borders":""}}' data-current="2" catchtap="menuTap" bindtap='enter'>包装清单</text>
+   <text class='menu4 {{menuTapCurrent=="3"?"borders":""}}' data-current="3" catchtap="menuTap" bindtap='enter'>售后服务</text>
+</view>
+<!-- 选项卡的内容 -->
+<view class="tab1" hidden="{{menuTapCurrent!='0'}}"><image src='../../images/tianp2.jpg'></image></view>
+<view class="tab2" hidden="{{menuTapCurrent!='1'}}">
+  <view>重量：350g</view>
+  <view>原材料：巧克力、奶油、甜糕</view>
+  <view>卡路里：240千焦</view>
+  <view>保质期：低温通风环境5天</view>
+</view>
+<view class="tab3" hidden="{{menuTapCurrent!='2'}}">
+  <view>生产日期：2018-06-28</view>
+  <view>生产厂商：甜品之王</view>
+</view>
+<view class="tab4" hidden="{{menuTapCurrent!='3'}}">
+  <view>联系人：甜品之王</view>
+  <view>联系方式：110</view>
+</view>
+<!-- 底部的 -->
+<view class='bottom'>
+  <view class='icon-box'><image src='../../icon/iconMsg.png'></image><text class='wenzi'>客服</text></view>
+  <view class='icon-box' catchtap='collectedGoods'>
+    <image src='../../icon/iconCollect.png' wx:if="{{!collected}}"></image>
+    <image src='../../icon/iconCollect1.png' wx:if="{{collected}}"></image>
+    <text class='wenzi'>收藏</text></view>
+  <view class='icon-box'><image src='../../icon/iconMsg.png'></image><text class='wenzi'>购物车</text></view>
+  <view class='icon-box bar1'><text class='wenzi'>立即购买</text></view>
+  <view class='icon-box bar2'><text class='wenzi'>加入购物车</text></view>  
+</view>
+</view> 

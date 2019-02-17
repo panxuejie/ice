@@ -1,0 +1,55 @@
+<!--pages/list/list.wxml-->
+<!-- 左侧分类列表 -->
+<view class="menu_box">
+ <text class='menu1 {{menuTapCurrent=="0"?"borders":""}}' data-current="0" catchtap="menuTap" bindtap='enter'>冰淇淋</text>
+ <text class='menu2 {{menuTapCurrent=="1"?"borders":""}}' data-current="1" catchtap="menuTap" bindtap='enter'>布丁</text>
+  <text class='menu3 {{menuTapCurrent=="2"?"borders":""}}' data-current="2" catchtap="menuTap" bindtap='enter'>果汁</text>
+   <text class='menu4 {{menuTapCurrent=="3"?"borders":""}}' data-current="3" catchtap="menuTap" bindtap='enter'>奶茶</text>
+</view>
+<!-- 选项卡的内容 -->
+<view class='list-right'>
+  <view class="tab1" hidden="{{menuTapCurrent!='0'}}">
+   <view class='businessBox' wx:for='{{cakelist}}' wx:key='index'>
+    <view class='business-pic'>
+      <image src='{{item.img_url}}'></image>
+    </view>
+    <view class='business-desc'>
+          <view><text>{{item.name}}</text></view>
+          <view class='business-price'><text>￥</text>{{item.price}}</view>
+        </view>
+   </view>
+  </view>
+  <view class="tab2" hidden="{{menuTapCurrent!='1'}}">
+    <view class='businessBox' wx:for='{{cakelist}}' wx:key='index'>
+    <view class='business-pic'>
+      <image src='{{item.img_url}}'></image>
+    </view>
+    <view class='business-desc'>
+          <view><text>{{item.name}}</text></view>
+          <view class='business-price'><text>￥</text>{{item.price}}</view>
+        </view>
+   </view>
+  </view>
+  <view class="tab3" hidden="{{menuTapCurrent!='2'}}">
+  <view class='businessBox' wx:for='{{cakelist}}' wx:key='index'>
+    <view class='business-pic'>
+      <image src='{{item.img_url}}'></image>
+    </view>
+    <view class='business-desc'>
+          <view><text>{{item.name}}</text></view>
+          <view class='business-price'><text>￥</text>{{item.price}}</view>
+        </view>
+   </view>
+  </view>
+  <view class="tab4" hidden="{{menuTapCurrent!='3'}}">
+   <view class='businessBox' wx:for='{{cakelist}}' wx:key='index'>
+    <view class='business-pic'>
+      <image src='{{item.img_url}}'></image>
+    </view>
+    <view class='business-desc'>
+          <view><text>{{item.name}}</text></view>
+          <view class='business-price'><text>￥</text>{{item.price}}</view>
+        </view>
+   </view>
+  </view>
+</view>

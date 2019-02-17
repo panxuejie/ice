@@ -1,0 +1,18 @@
+/**index.wxss**/
+.slider,.slider swiper,.slider swiper image{
+  height:400rpx;
+  width:100%;
+}
+.recommond-text {
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #AB956D;
+}
+.container{
+  padding:0px;
+}
+image{
+  width:380px;
+}
+

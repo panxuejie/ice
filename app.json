@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/details/details",
+    "pages/logs/logs",
+    "pages/cart/cart",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#AB956D",
+    "navigationBarTitleText": "冰淇淋",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/icon/iconIndex.png",
+        "selectedIconPath": "/icon/iconIndex1.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "分类",
+        "iconPath": "/icon/iconKinds.png",
+        "selectedIconPath": "/icon/iconKinds1.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/icon/iconCart.png",
+        "selectedIconPath": "/icon/iconCart1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心",
+        "iconPath": "/icon/iconMine.png",
+        "selectedIconPath": "/icon/iconMine1.png"
+      }
+    ]
+  }
+}

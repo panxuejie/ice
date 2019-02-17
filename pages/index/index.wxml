@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<scroll-view scroll-y style='height: 100%'>
+<view class="container">
+  <!-- 图片轮播 -->
+ <view class='slider'>
+  <swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="1000">
+    <block wx:for='{{list}}' wx:key='index'>
+    <swiper-item >
+      <image src='{{item.img_url}}' lazy-load mode='aspectFill'></image>
+    </swiper-item>
+    </block>
+  </swiper>
+ </view>
+
+<!-- 精品推荐 开始 -->
+ <view>
+  <view class='recommond-text'>--精品推荐--</view>
+  <navigator url='../details/details'><image src='../../images/tianp6.jpg'></image></navigator>
+  <navigator url='../details/details'><image src='../../images/tianp11.jpg'></image></navigator>
+ </view>
+<!-- 结束 -->
+
+<!-- 精美甜品 开始 -->
+ <view class='recommond-text'>--精美甜品--</view>
+    <view class='businessBox' wx:for="{{cakelist}}" wx:key="index">
+      <navigator url='../details/details'>
+        <view class='business-pic'>
+          <image src='{{item.img_url}}'></image>
+        </view>
+        <view class='business-desc'>
+          <view><text>{{item.name}}</text></view>
+          <view class='business-promotion' wx:if='{{item.promotion}}'>促销</view>
+          <view class='business-price'><text>￥</text>{{item.price}}</view>
+        </view>
+        </navigator>
+    </view>
+<!-- 结束 -->
+</view>
+</scroll-view>
